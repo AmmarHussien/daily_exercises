@@ -10,16 +10,16 @@ class SearchContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(
-        vertical: 30,
+        vertical: 20,
       ),
       padding: const EdgeInsets.symmetric(
-        horizontal: 30,
+        horizontal: 20,
         vertical: 5,
       ),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(
-          30,
+          25,
         ),
       ),
       child: TextFormField(

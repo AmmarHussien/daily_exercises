@@ -1,9 +1,10 @@
+import 'package:daily_exercises/Details/details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../components/custom_nav_bar.dart';
+import '../components/search_container.dart';
 import 'components/category_card.dart';
-import 'components/search_container.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -78,7 +79,13 @@ class HomeScreen extends StatelessWidget {
                         CategogryCard(
                           image: 'assets/icons/Meditation.svg',
                           title: 'Meditation',
-                          press: () {},
+                          press: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const DetailsScreen(),
+                              ),
+                            );
+                          },
                         ),
                         CategogryCard(
                           image: 'assets/icons/yoga.svg',
